@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LiveLab 4 Demo</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Navigation bar starts here -->
+  <nav>
+    <!-- Site name on the left -->
+    <div class="nav-site-title">TravelSite</div>
+
+    <!-- Navigation links on the right -->
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <!-- Navigation bar ends here -->
+
+  <!-- Site introduction starts here -->
+  <div class="intro-section">
+    <h1>Experience Travel with Purpose and Passion</h1>
+    <!-- Short description for beginners to understand -->
+    <p>
+      Welcome to our travel site! We help you discover amazing destinations and travel with meaning.
+    </p>
+  </div>
+  <!-- Site introduction ends here -->
+
+  <!-- Eco-friendly destinations section -->
+  <div class="destinations-section">
+    <h2>Explore Our Eco-Friendly Destinations</h2>
+
+    <!-- Container for all cards -->
+    <div class="cards-container">
+      <!-- Individual destination card -->
+      <div class="destination-card">
+        <img src="destination-image.jpg" alt="Destination Name" class="destination-image">
+        <h3>Destination Name</h3>
+        <p>Short description of the destination, focusing on eco-friendly aspects.</p>
+      </div>
+
+      <!-- Add more destination cards as needed -->
+    </div>
+  </div>
+  <!-- Eco-friendly destinations section ends here -->
+
+  <!-- Call-to-action section -->
+  <div class="cta-section">
+    <p>Ready to explore? Book your eco-friendly trip now!</p>
+    <a href="#" class="cta-button">Start Your Adventure</a>
+  </div>
+  <!-- Call-to-action section ends here -->
+
+  Hello world
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+/* Reset some default spacing for consistency */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7fafc; /* Very light pastel blue */
+  font-family: 'Segoe UI', 'Verdana', 'Tahoma', 'Geneva', sans-serif;
+  color: #222;
+}
+
+/* Navigation bar: lighter pastel green */
+nav {
+  width: 100%;
+  background-color: #b7e4c7; /* Pastel green */
+  padding: 18px 0;
+  font-family: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-shadow: 0 2px 8px rgba(56, 142, 60, 0.08);
+}
+
+/* Site name on the left */
+.nav-site-title {
+  font-size: 2em;
+  font-weight: bold;
+  color: #388e3c;
+  letter-spacing: 2px;
+  text-shadow: none;
+}
+
+/* Navigation links on the right */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+/* Style for navigation links */
+.nav-links a {
+  color: #388e3c; /* Pastel green text */
+  text-decoration: none;
+  font-size: 1.15em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+  display: inline-block;
+  margin: 0;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  background: none;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  background: #388e3c;
+  border-radius: 6px;
+  padding: 4px 8px;
+  border-bottom: 2px solid #fff;
+}
+
+/* Responsive nav for mobile */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 8px;
+  }
+  .nav-site-title {
+    margin-bottom: 8px;
+    font-size: 1.4em;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .nav-links a {
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
+/* Site introduction bubble */
+.intro-section {
+  margin-top: 28px;
+  margin-bottom: 18px;
+}
+
+.intro-bubble {
+  background-color: #e3f6f5; /* Pastel blue bubble */
+  border-radius: 18px;
+  padding: 32px 20px 24px 20px;
+  max-width: 600px;
+  margin: 0 auto 24px auto;
+  box-shadow: 0 4px 16px rgba(56, 142, 60, 0.10);
+  text-align: center;
+}
+
+.intro-headline {
+  font-size: 1.7em;
+  color: #388e3c;
+  margin-bottom: 12px;
+  margin-top: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.intro-text {
+  font-size: 1.13em;
+  color: #388e3c;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Destinations section */
+.destinations-section {
+  margin: 0 auto 32px auto;
+  max-width: 1200px;
+  padding: 0 10px;
+}
+
+.destinations-section h2 {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-family: inherit;
+  font-weight: bold;
+  color: #388e3c;
+  letter-spacing: 1px;
+}
+
+/* Cards container */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/* Card style: pastel backgrounds, white text */
+.destination-card {
+  background-color: #b5c9d6; /* Pastel blue-grey */
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(56, 142, 60, 0.07);
+  max-width: 350px;
+  width: 100%;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 420px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.destination-card:nth-child(2) {
+  background-color: #ffe5b4; /* Pastel peach */
+}
+.destination-card:nth-child(3) {
+  background-color: #b7e4c7; /* Pastel green */
+}
+
+.destination-card:hover {
+  box-shadow: 0 8px 24px rgba(56, 142, 60, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* Image at the top of the card */
+.destination-image {
+  width: 100%;
+  max-width: 350px;
+  height: 180px !important;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 0;
+  display: block;
+}
+
+/* Content inside the card */
+.destination-content {
+  padding: 18px 18px 0 18px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Card title: dark grey text for readability */
+.destination-content h3 {
+  font-size: 1.3em;
+  margin: 10px 0 8px 0;
+  color: #222; /* Dark grey */
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Card description: dark grey text */
+.destination-content p {
+  font-size: 1em;
+  color: #222; /* Dark grey */
+  margin: 0 0 10px 0;
+  font-family: inherit;
+}
+
+/* List of highlights: dark grey text */
+.destination-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 0.98em;
+  color: #222; /* Dark grey */
+  font-family: inherit;
+  margin-bottom: 0;
+}
+
+/* Responsive: cards in a row on desktop */
+@media (min-width: 700px) {
+  .cards-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 28px;
+  }
+  .destination-card {
+    max-width: 320px;
+  }
+}
+
+/* Call-to-action section */
+.cta-section {
+  text-align: center;
+  margin-top: 36px;
+}
+
+/* Bubble style for the CTA message */
+.cta-bubble {
+  background-color: #e3f6f5; /* Pastel blue bubble */
+  border-radius: 18px;
+  padding: 24px 20px 16px 20px;
+  max-width: 500px;
+  margin: 0 auto 18px auto;
+  box-shadow: 0 4px 16px rgba(56, 142, 60, 0.10);
+  text-align: center;
+}
+
+.cta-bubble p {
+  font-family: inherit;
+  font-size: 1.25em;
+  color: #388e3c;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+/* Bubble style for the CTA button */
+.cta-button-bubble {
+  background-color: #b7e4c7; /* Pastel green */
+  border-radius: 18px;
+  display: inline-block;
+  padding: 14px 32px;
+  margin: 10px auto 0 auto;
+  box-shadow: 0 4px 16px rgba(56, 142, 60, 0.10);
+  text-align: center;
+}
+
+/* CTA button text */
+.cta-button {
+  display: inline-block;
+  background: none;
+  color: #388e3c;
+  font-family: inherit;
+  font-size: 1.3em;
+  font-weight: 600;
+  border: none;
+  border-radius: 0;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: color 0.2s;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  color: #fff;
+  text-decoration: underline;
+}

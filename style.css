@@ -261,30 +261,30 @@ nav {
   align-items: flex-start;
 }
 
-/* Card title: dark grey text for readability */
+/* Card title: lighter grey text for readability */
 .destination-content h3 {
   font-size: 1.3em;
   margin: 10px 0 8px 0;
-  color: #222; /* Dark grey */
+  color: #444; /* Lighter grey */
   font-family: inherit;
   font-weight: bold;
   letter-spacing: 0.5px;
 }
 
-/* Card description: dark grey text */
+/* Card description: lighter grey text */
 .destination-content p {
   font-size: 1em;
-  color: #222; /* Dark grey */
+  color: #444; /* Lighter grey */
   margin: 0 0 10px 0;
   font-family: inherit;
 }
 
-/* List of highlights: dark grey text */
+/* List of highlights: lighter grey text */
 .destination-list {
   margin: 0;
   padding-left: 18px;
   font-size: 0.98em;
-  color: #222; /* Dark grey */
+  color: #444; /* Lighter grey */
   font-family: inherit;
   margin-bottom: 0;
 }
